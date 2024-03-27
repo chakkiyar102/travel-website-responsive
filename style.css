@@ -6,102 +6,236 @@
 /* Navbar */
 
 #logo-img {
-    width: 70px;
+    width: 100px;
     height: auto;
 }
 
 .nav-item:hover {
-    filter: drop-shadow(0 0 0.75rem #0d0d0b);
+    filter: drop-shadow(0 0 0.75rem grey
+    );
 }
 
-/* Activities */
+@media (max-width:992px){
 
-#activities{
+  .nav-item:hover { 
+    filter: drop-shadow(0 0 0.75rem grey
+    );
+  }
+}
+
+/* Hero section */
+
+#hero-sec {
     position: relative;
-    background-image: url('./images/ian-dooley-hpTH5b6mo2s-unsplash.jpg');
+    background-image: url('./images/ian-dooley-DuBNA1QMpPA-unsplash.jpg');
     width: 100%;
-    height: 100vh;
+    height: 89vh;
     background-position: center;
-    background-size:cover;
-    background-attachment:fixed;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 50% 100%, 0% 75%);
+    background-size: cover;
+    background-attachment: fixed;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 50% 100%, 0% 75%); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 50% 100%, 0% 50%);
 }
+
+/* .hero {
+    background-image: radial-gradient(#b7b7b7 2px, transparent 2px);
+    background-size: 32px 32px;
+    background-color: #ffffe9;
+} */
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 20%;
     right: 15%;
     font-size: 70px;
     color: white;
     filter: drop-shadow(0 2mm 2mm rgb(160, 0, 210));
-    
+
 }
 
-@media (max-width:480px){
-    .hero h1{
+@media (max-width:410px) {
+    .hero h1 {
+        position: absolute;
+        font-size: 25px;
+        top: 10%;
+        left: 20%;
+        right: 5%;
+    }
+}
+
+@media (max-width:480px) {
+    .hero h1 {
+        position: absolute;
+        font-size: 30px;
+        left: 20%;
+        right: 20%;
+        top: 10%;
+    }
+}
+
+@media (max-width:860px) {
+    .hero h1 {
+        position: absolute;
+        font-size: 60px;
+        left: 20%;
+        right: 20%;
+        top: 10%;
+    }
+}
+
+@media (max-width:768px) {
+    .hero h1 {
+        position: absolute;
+        font-size: 65px;
+        left: 20%;
+        right: 20%;
+        top: 10%;
+    }
+}
+
+@media (max-width:588px) {
+    .hero h1 {
         position: absolute;
         font-size: 45px;
         left: 20%;
         right: 20%;
+        top: 10%;
     }
+
 }
-@media (max-width:992px){
-    .hero h1{
+
+@media (max-width:375px) {
+    .hero h1 {
         position: absolute;
-        font-size: 54px;
+        font-size: 41px;
         left: 20%;
         right: 20%;
+        top: 10%;
     }
+
 }
-@media (max-width:768px){
-    .hero h1{
+
+@media (max-width:280px) {
+    .hero h1 {
         position: absolute;
-        font-size: 44px;
+        font-size: 34px;
         left: 20%;
         right: 20%;
+        top: 10%;
     }
+
 }
-@media (max-width:576px){
-    .hero h1{
-        position: absolute;
-        font-size: 38px;
-        left: 20%;
-        right: 20%;
-    }
-}
-.btn-hero{
+
+.btn-hero {
     position: absolute;
-    bottom:48%;
+    bottom: 58%;
     left: 20%;
     right: 15%;
     filter: drop-shadow(0 1mm 1mm rgb(160, 0, 210));
 }
 
-@media (max-width:1200px){
-    .btn-hero{
-    position: absolute;
-    bottom:38%;
-    left: 20%;
-    right: 15%;
+@media (max-width:1200px) {
+    .btn-hero {
+        position: absolute;
+        bottom: 34%;
+        left: 20%;
+        right: 15%;
     }
 }
 
-@media (max-width:900px){
-    .btn-hero{
-    position: absolute;
-    bottom:38%;
-    left: 20%;
-    right: 15%;
+@media (max-width:1024px) {
+    .btn-hero {
+        position: absolute;
+        bottom:34%;
+        left: 20%;
+        right: 15%;
     }
 }
-@media (max-width:768px){
-    .btn-hero{
-    position: absolute;
-    bottom:35%;
-    left: 20%;
-    right: 15%;
+
+@media (max-width:992px) {
+    .btn-hero {
+        position: absolute;
+        bottom: 34%;
+        left: 20%;
+        right: 15%;
     }
 }
-/* Destinations */
+
+@media (max-width:768px) {
+    .btn-hero {
+        position: absolute;
+        bottom: 38%;
+        left: 20%;
+        right: 15%;
+    }
+}
+
+}
+@media (max-width:576px) {
+    .btn-hero {
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
+        right: 15%;
+    }
+}
+
+@media (max-width:390px) {
+    .btn-hero {
+        position: absolute;
+        bottom: 34%;
+        left: 20%;
+        right: 15%;
+    }
+}
+/* Activities */
+
+#activities {
+    position: relative;
+    background-image: url('./images/pexels-eberhard-grossgasteiger-691668.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    background: #acacac;
+    background: -webkit-linear-gradient(0deg, #acacac 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #acacac 0%, #ffffff 100%);
+
+}
+
+.mountain{
+    position: relative;
+    background-image: url('./images/pexels-eberhard-grossgasteiger-691668.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+.mountain h1{
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-left: 20%;
+    padding-right:20%
+}
+
+.mountain p{
+    position: absolute;
+    text-align: center;
+    margin-top: 35px;
+    padding-left: 20%;
+    padding-right:20%
+}
+
+.programs .card{
+    position: relative;
+    bottom: 20%;
+    border-radius: 20px;
+    filter: drop-shadow(0 2mm 2mm rgb(55, 102, 119));
+
+}
 

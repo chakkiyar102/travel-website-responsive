@@ -1,11 +1,14 @@
 * {
     margin: 0px;
     padding: 0px;
-    
-    
+    overflow:auto;
 }
 
 /* Navbar */
+
+.navbar{
+    filter: var(--filter);
+}
 
 #logo-img {
     width: 100px;
@@ -89,13 +92,14 @@
     text-align: center;
     justify-content: center;
     color: black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .mountain p{
     text-align: center;
     margin-top: 25px;
-    color: yellow;
-    text-shadow: 1px 1px 1px black;
+    color: black;
+    text-shadow: 2px 2px 2px #ffc107;
 
 }
 
@@ -137,7 +141,7 @@
 
 #why-us{
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     
 }
 
@@ -146,4 +150,27 @@
     padding: 20px;
     border-radius: 10px;
     filter: var(--filter);
+}
+
+footer{
+    background-color: #ffc107;
+    height: 5vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    position: absolute;
+    margin-top: 8px;
+
+}
+footer p{
+    margin-left: 40%;
+    margin-top: 8px;
 }

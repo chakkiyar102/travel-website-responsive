@@ -1,6 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    
+    
 }
 
 /* Navbar */
@@ -23,219 +25,125 @@
   }
 }
 
+:root{
+    --filter: drop-shadow(0 2mm 2mm black);
+}
+
 /* Hero section */
 
 #hero-sec {
     position: relative;
     background-image: url('./images/ian-dooley-DuBNA1QMpPA-unsplash.jpg');
     width: 100%;
-    height: 89vh;
+    height: 79vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 50% 100%, 0% 75%); */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 50% 100%, 0% 50%);
+    clip-path: polygon(100% 0, 100% 68%, 50% 76%, 0 93%, 0 53%, 0% 0%);
 }
-
-/* .hero {
-    background-image: radial-gradient(#b7b7b7 2px, transparent 2px);
-    background-size: 32px 32px;
-    background-color: #ffffe9;
-} */
 
 .hero h1 {
     position: absolute;
-    top: 10%;
-    left: 20%;
-    right: 15%;
+    color: #ffc107;
+    top: 20%;
+    left: 10%;
+    right: 10%;
     font-size: 70px;
-    color: white;
-    filter: drop-shadow(0 2mm 2mm rgb(160, 0, 210));
+    filter: var(--filter);
 
 }
 
-@media (max-width:410px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 25px;
-        top: 10%;
-        left: 20%;
-        right: 5%;
-    }
-}
-
-@media (max-width:480px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 30px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-}
-
-@media (max-width:860px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 60px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-}
-
-@media (max-width:768px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 65px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-}
-
-@media (max-width:588px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 45px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-
-}
-
-@media (max-width:375px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 41px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-
-}
-
-@media (max-width:280px) {
-    .hero h1 {
-        position: absolute;
-        font-size: 34px;
-        left: 20%;
-        right: 20%;
-        top: 10%;
-    }
-
-}
 
 .btn-hero {
     position: absolute;
-    bottom: 58%;
-    left: 20%;
-    right: 15%;
-    filter: drop-shadow(0 1mm 1mm rgb(160, 0, 210));
+    top: 45%;
+    left: 10%;
+    filter: var(--filter);
 }
 
-@media (max-width:1200px) {
-    .btn-hero {
-        position: absolute;
-        bottom: 34%;
-        left: 20%;
-        right: 15%;
-    }
-}
-
-@media (max-width:1024px) {
-    .btn-hero {
-        position: absolute;
-        bottom:34%;
-        left: 20%;
-        right: 15%;
-    }
-}
-
-@media (max-width:992px) {
-    .btn-hero {
-        position: absolute;
-        bottom: 34%;
-        left: 20%;
-        right: 15%;
-    }
-}
-
-@media (max-width:768px) {
-    .btn-hero {
-        position: absolute;
-        bottom: 38%;
-        left: 20%;
-        right: 15%;
-    }
-}
-
-}
-@media (max-width:576px) {
-    .btn-hero {
-        position: absolute;
-        bottom: 30%;
-        left: 20%;
-        right: 15%;
-    }
-}
-
-@media (max-width:390px) {
-    .btn-hero {
-        position: absolute;
-        bottom: 34%;
-        left: 20%;
-        right: 15%;
-    }
-}
 /* Activities */
 
 #activities {
     position: relative;
-    background-image: url('./images/pexels-eberhard-grossgasteiger-691668.png');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background: #acacac;
     background: -webkit-linear-gradient(0deg, #acacac 0%, #ffffff 100%);
     background: linear-gradient(0deg, #acacac 0%, #ffffff 100%);
+    /* clip-path: polygon(50% 0, 100% 0, 100% 74%, 0 53%, 0 53%, 0 0); */
 
 }
 
 .mountain{
     position: relative;
-    background-image: url('./images/pexels-eberhard-grossgasteiger-691668.png');
+    background-image: url(./images/pexels-eberhard-grossgasteiger-691668.png);
     background-position: top;
     background-size: cover;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 .mountain h1{
     
     text-align: center;
     justify-content: center;
-    margin-top: 30px;
-    padding-left: 20%;
-    padding-right:20%
+    color: black;
 }
 
 .mountain p{
-    position: absolute;
     text-align: center;
-    margin-top: 35px;
-    padding-left: 20%;
-    padding-right:20%
-}
-
-.programs .card{
-    position: relative;
-    bottom: 20%;
-    border-radius: 20px;
-    filter: drop-shadow(0 2mm 2mm rgb(55, 102, 119));
+    margin-top: 25px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
 
 }
 
+.activity-list h1{
+    
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+#destinations{
+    background-color:linear-gradient(70deg, rgb(228, 255, 65), rgb(6, 62, 158))
+    width:100%;
+    height:100%
+}
+.carrd{
+    padding-bottom: 35px;
+}
+@media (max-width:768px){
+  .carrd {
+    padding-bottom: 25px;
+    linear-gradient(35deg, rgb(165, 180, 252), rgb(135, 220, 224), rgb(101, 154, 250), rgb(21, 134, 5), rgb(90, 125, 210))
+    
+}
+}
+#testimonial{
+    background: radial-gradient(#e34696 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #e34696 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #e34696 49% 51%, transparent 51%);
+        background-size: 1em 1em;
+        opacity: 1
+        width: 100vw;
+        height: auto;
+}
+/* .inst{
+    margin-left:auto;
+}
+
+@media (max-width:1200px){
+    .inst{margin-left: 5px;}
+} */
+
+#why-us{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.forms{
+    background-color: #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+    filter: var(--filter);
+}
